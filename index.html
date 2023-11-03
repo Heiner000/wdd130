@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Garrett Heiner | WDD 130</title>
+        <meta name="description" content="Garrett Heiner's WDD130: Web Fundamentals course home page.">
+        <meta name="author" content="Garrett Heiner">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="wwr/">Rafting Website</a>
+                <a href="wwr/site-plan-rafting.html">Rafting Site Plan</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Garrett Heiner | WDD 130</h1>
+            <img src="images/profile.png" alt="my profile picture" width="200">
+            <p>
+                I'm Garrett Heiner, from Phoenix, Arizona, a multi-faceted aspiring software engineer with a relentless curiosity that extends beyond coding. Sure, I have a passion for tackling complex technical problems and optimizing elegant solutions. But I believe in pursuing a diversity of interests that stimulate the mind and spirit.
+                <br>
+                Away from the keyboard, you may find me channeling my inner Mozart on the piano keys, embarking on a culinary journey through global spices and flavors, or getting lost in the pages of a high fantasy epic. I make time for spiritual reflection at the temple, and value moments spent connecting with family and friends.
+                <br>
+                I continuously seek out new frontiers of knowledge across many disciplines. Though my professional expertise lies in software engineering, I believe cultivating varied passions leads to a richer life experience. My goal is to pair my meticulous technical logic with an open and creative outlook. There are always new dimensions to explore if one maintains childlike curiosity.
+            </p>
+        </main>
+        <aside>
+            <h2>Arizona</h2>
+            <img src="/images/rsz_arizona.png" alt="Grand Canyon's Horseshoe Bend">
+            <p>Arizona is a southwestern U.S. state known for its diverse landscapes like the Grand Canyon, as well as cities like Phoenix. It became the 48th state in 1912 and has about 7 million residents. Arizona has a sunny climate and economy based on sectors like tourism and manufacturing.</p>
+        </aside>
+        <footer>
+            <p>© <span id="year"></span> | Garrett Heiner | Arizona, USA</p>
+        </footer>
+        <script>
+            const year = new Date().getFullYear();
+            document.getElementById("year").innerText = year;
+        </script>
+    </body>
+</html>
