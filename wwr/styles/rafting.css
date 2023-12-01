@@ -85,6 +85,10 @@ footer a {
     text-decoration: none;
 }
 
+iframe {
+    border: none;
+}
+
 /* Class Selectors */
 
 .hero {
@@ -186,6 +190,12 @@ article>img {
     align-items: center;
 }
 
+.team h1 {
+    grid-column: 1/4;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
 .company {
     margin: 2rem;
     max-width: 1000px;
@@ -259,7 +269,7 @@ legend {
     left: 0;
 }
 
-input[type="submit"] {
+button {
     display: block;
     width: 100%;
     padding: 1rem;
@@ -272,7 +282,7 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
