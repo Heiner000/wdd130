@@ -34,6 +34,11 @@ p {
     padding: 25px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--accent2-color)
+}
+
 nav {
     display: flex;
     background-color: var(--nav-background-color);
@@ -284,5 +289,19 @@ button {
 
 button:hover {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
+}
+
+.reserve h1 {
+    font-size: 2rem;
+    top: 15%;
+}
+
+.reserve button {
+    position: absolute;
+    width: 30%;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -5px -5px 5px var(--primary-color), 5px 5px 5px var(--primary-color);
 }
