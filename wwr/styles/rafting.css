@@ -7,7 +7,6 @@
 }
 
 :root {
-    /* --primary-color: #2E6D8Dff; */
     --primary-color: #F1CF82ff;
     --secondary-color: #404040;
     --accent1-color: #255a74;
@@ -293,15 +292,91 @@ button:hover {
 }
 
 .reserve h1 {
-    font-size: 2rem;
-    top: 15%;
+    font-size: 2.5rem;
+    top: 50%;
+    transition: color 0.3s;
 }
 
-.reserve button {
-    position: absolute;
-    width: 30%;
-    bottom: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: -5px -5px 5px var(--primary-color), 5px 5px 5px var(--primary-color);
+.reserve h1:hover {
+    color: var(--accent2-color);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--accent2-color);
+}
+
+.card img {
+    width: 150px;
+    object-fit: cover;
+}
+
+.left-img {
+    padding-left: 1rem;
+}
+
+.right-img {
+    padding-right: 1rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    font-weight: normal;
+    color: var(--accent1-color)
+}
+
+.card figcaption {
+    padding: 20px;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+aside {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+aside h2 {
+    padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+caption {
+    padding: 1rem;
+    font-size: 1.75rem;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 1rem;
 }
