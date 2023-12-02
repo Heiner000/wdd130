@@ -380,3 +380,62 @@ caption {
     border-bottom: 2px solid var(--primary-color);
     margin-bottom: 1rem;
 }
+
+.home {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 2.2rem;
+}
+
+.home article {
+    font-size: 2rem;
+    width: 60%;
+    top: 35%;
+}
+
+.actions {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.actions form h2 {
+    margin-bottom: 1rem;
+}
+
+.funnel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.funnel a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.funnel h2 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.funnel p {
+    font-size: 1.2rem;
+}
+
+.funnel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
